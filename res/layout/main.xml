@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="12dip"
+    >
+     
+<TextView android:id="@+id/defstatus"
+	android:text="defstatus"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"	
+	android:gravity="center_horizontal"
+	android:textColor = "#CD853F"
+	android:textSize="30.0sp"	
+	/>
+
+<View android:background="@drawable/black_grey_gradient"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="12dip"	
+    android:layout_marginBottom="12dip"	    
+    />	
+
+<TableLayout android:id="@+id/mainTableLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="1">
+
+    <TableRow>
+    	<TextView
+			android:text="Service State"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20.0sp"
+			android:layout_column="1"
+            />            
+    	<TextView
+			android:text="DEFRC State"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_column="1"			
+			android:gravity="right"
+			android:textSize="20.0sp"	
+            />
+    </TableRow>
+        
+    <TableRow android:paddingTop="12dip">
+    	<TextView android:id="@+id/serviceState"
+			android:text="serviceState"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"			
+			android:paddingLeft="25dip"
+			android:typeface="monospace"
+			android:textColor="#7CFC00"		
+			android:textSize="19.0sp"
+			android:layout_column="1"			
+            />    
+		<TextView android:id="@+id/defrcState"
+			android:text="defrcState"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_column="1"
+			android:paddingRight="25dip"
+			android:gravity="right"
+			android:typeface="monospace"
+			android:textColor="#7CFC00"		
+			android:textSize="19.0sp"					
+            />
+    </TableRow>
+</TableLayout>
+
+
+<View android:background="@drawable/black_grey_gradient"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="12dip"	
+    android:layout_marginBottom="12dip"	    
+    />
+        
+<TextView 
+	android:text="Logfile Size"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textSize="20.0sp"
+	android:gravity="center_horizontal"	
+	/>	
+
+<TextView android:id="@+id/logfileSize"
+	android:text="logfileSize"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:layout_marginTop="5dip"
+	android:typeface="monospace"
+	android:textColor="#4096EE"		
+	android:textSize="15.0sp"
+	/>	
+	
+<View android:background="@drawable/black_grey_gradient"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="12dip"	
+    android:layout_marginBottom="12dip"	    
+    />
+
+<TextView 
+	android:text="Current Date and Time"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:textSize="20.0sp"
+	/>	
+
+<TextView android:id="@+id/currentDate"
+	android:text="currentDate"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:layout_marginTop="5dip"
+	android:typeface="monospace"
+	android:textColor="#4096EE"		
+	android:textSize="15.0sp"	
+	/>	
+
+<View android:background="@drawable/black_grey_gradient"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="12dip"	
+    android:layout_marginBottom="12dip"	    
+    />
+
+<TextView android:id="@+id/lastNumRestarts"
+	android:text="lastNumRestarts:"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:textSize="20.0sp"
+	/>	
+
+<TextView android:id="@+id/lastRestarts"
+	android:text="lastRestarts"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:layout_marginTop="5dip"
+	android:typeface="monospace"
+	android:textColor="#4096EE"		
+	android:textSize="15.0sp"
+	/>	
+
+</LinearLayout>
+<!--</ScrollView>-->
